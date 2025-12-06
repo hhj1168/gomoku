@@ -1,0 +1,33 @@
+# ========================================
+# GitHub 部署命令 - 复制粘贴执行
+# ========================================
+
+# 请将以下命令复制到 PowerShell 中执行
+# 记得替换 YOUR_USERNAME 和 YOUR_EMAIL
+
+# 步骤 1: 配置 Git 用户信息
+# 替换下面的用户名和邮箱为你的 GitHub 信息
+git config --global user.name "YOUR_USERNAME"
+git config --global user.email "YOUR_EMAIL"
+
+# 步骤 2: 添加所有文件并创建提交
+git add .
+git commit -m "🎮 Initial commit: 3D Gomoku Game with responsive design"
+
+# 步骤 3: 设置主分支为 main
+git branch -M main
+
+# 步骤 4: 添加远程仓库
+# 替换 YOUR_USERNAME 为你的 GitHub 用户名
+git remote remove origin
+git remote add origin https://github.com/YOUR_USERNAME/gomoku.git
+
+# 步骤 5: 推送到 GitHub
+# 在执行此命令前，请先在 GitHub 上创建名为 "gomoku" 的仓库
+# 访问: https://github.com/new
+git push -u origin main
+
+# ========================================
+# 完成后访问地址:
+# https://YOUR_USERNAME.github.io/gomoku/
+# ========================================
